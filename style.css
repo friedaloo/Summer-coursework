@@ -219,22 +219,47 @@ a {
 }
 .footer-bs .footer-ns p { font-size:12px; color:rgba(255,255,255,0.70); }
 
-/* html, body {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #D9C4B0;
+    background-color: #ffffff;
 }
 
 body {
     display: flex;
     flex-direction: column;
-} */
+}
 
 footer.footer-bs {
     margin-top: auto;
     padding-bottom: 0;
     border-radius: 0;
+}
+
+
+/*Middle section*/
+.first_circle {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #333333;
+    margin-top: 30px;
+}
+
+.long_line {
+    height: 3000px;
+    width: 2.5px;
+    background-color: #333333;
+}
+
+.second_circle {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #333333;
+    margin-bottom: 30px;
+
 }
 
 @media (min-width: 768px) {
