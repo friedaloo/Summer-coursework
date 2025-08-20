@@ -1,3 +1,3 @@
 #summer-coursework
 
-This branch of the repo contains the content of About us page. It has the about us page's HTML, CSS and JavaScript
+This branch of the REPO contains the code for footer and its CSS, this is a common code and CSS that will be necessary.
