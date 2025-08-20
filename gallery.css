@@ -1,3 +1,10 @@
+body.disable-scroll {
+    overflow: hidden;           /* prevent scrolling */
+    padding-right: 17px;        /* approximate scrollbar width to prevent layout shift */
+    scrollbar-gutter: stable;   /* modern browsers: keep scrollbar visible */
+}
+
+
 .hero {
     width: 100%;
     padding: 2% 5%;
@@ -128,17 +135,26 @@
 .row4-box:nth-child(5) { height: 180px; }
 .row4-box:nth-child(6) { height: 180px; }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* darker background */
+    display: none;   /* hidden by default */
+    z-index: 998;    /* sits below popup */
+}
+
 .popup {
     height: 600px;
     width: 450px;
-    /* background-color: #fff; */
-    /* border-radius: 8px; */
-    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px; */
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* padding: 0 20px; */
+    display: none;
+    z-index: 999; /* keep popup above overlay */
 }
 
 .popup-inner {
@@ -201,6 +217,10 @@
 
 .popup-description i:hover {
     color: #6a6868;
+}
+
+.popup-description i:nth-child(1):hover {
+    color: #ff410c;
 }
 
 .popup-close {
