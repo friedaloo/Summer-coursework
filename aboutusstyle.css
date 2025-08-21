@@ -36,7 +36,7 @@
 
 /* Vertical Line */
 .line {
-    height: 2300px;
+    height: 2400px;
     position: absolute;
     top: 40px; /* Below top circle */
     bottom: 40px; /* Above bottom circle */
@@ -62,10 +62,10 @@
 
 /* Card Styling */
 .card {
-    height: 350px;
+    height: 375px;
     width: 300px;
     padding: 15px;
-    background-color: #e0e0e0;
+    background-color: #d9d9d9;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -102,4 +102,69 @@
         margin: 20px 0 0 40px;
         text-align: left;
     }
+}
+
+
+
+.img_circle1 {
+    height: 115px;
+    width: 115px;
+    border-radius: 100%;
+    background-color: #000000;
+}
+
+.img_circle2 {
+    height: 115px;
+    width: 115px;
+    border-radius: 100%;
+    background-color: #000000;
+}
+
+.img_circle3 {
+    height: 115px;
+    width: 115px;
+    border-radius: 100%;
+    background-color: #000000;
+}
+
+.img_circle4 {
+    height: 115px;
+    width: 115px;
+    border-radius: 100%;
+    background-color: #000000;
+}
+
+.img_circle5 {
+    height: 115px;
+    width: 115px;
+    border-radius: 100%;
+    background-color: #000000;
+}
+
+.nameright {
+    margin-left: 140px;
+    font-size: 20px;
+    padding-top: 15px;
+    color: #444444;
+}
+
+.nameleft {
+    margin-left: 140px;
+    font-size: 20px;
+    padding-top: 15px;
+    color: #444444;
+}
+
+.sectionright {
+    font-size: 16px;
+    color: black;
+    margin-right: -150px;
+    padding-top: 55px;
+}
+
+.sectionleft {
+    font-size: 16px;
+    color: black;
+    margin-right: -150px;
+    padding-top: 55px;
 }
