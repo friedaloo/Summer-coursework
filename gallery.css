@@ -16,6 +16,7 @@ body.disable-scroll {
 }
 
 .hero-row {
+    min-width: 19%;
     width: 21%;
     height: auto;
     /* height: 2000px; */
