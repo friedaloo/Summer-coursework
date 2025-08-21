@@ -65,7 +65,7 @@
     height: 375px;
     width: 300px;
     padding: 15px;
-    background-color: #d9d9d9;
+    background-color: #A2AADB;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -75,6 +75,7 @@
 .card_right {
     margin-top: 20px;
     margin-left: 500px; /* Distance from center line */
+    color: #000000;
 }
 
 /* Card on Left */
@@ -106,65 +107,80 @@
 
 
 
-.img_circle1 {
+.img_circle1, .img_circle2, .img_circle3, .img_circle4, .img_circle5 {
     height: 115px;
     width: 115px;
-    border-radius: 100%;
-    background-color: #000000;
+    border-radius: 50%; /* Use 50% for perfect circle */
+    overflow: hidden; /* Ensures image is clipped to circle */
+    background-color: #d9d9d9; /* Fallback background if image fails to load */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.img_circle2 {
-    height: 115px;
-    width: 115px;
-    border-radius: 100%;
-    background-color: #000000;
+.img_circle1 img, .img_circle2 img, .img_circle3 img, .img_circle4 img, .img_circle5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the circle without distortion */
+    object-position: center; /* Centers the image */
 }
 
-.img_circle3 {
-    height: 115px;
-    width: 115px;
-    border-radius: 100%;
-    background-color: #000000;
-}
-
-.img_circle4 {
-    height: 115px;
-    width: 115px;
-    border-radius: 100%;
-    background-color: #000000;
-}
-
-.img_circle5 {
-    height: 115px;
-    width: 115px;
-    border-radius: 100%;
-    background-color: #000000;
-}
-
-.nameright {
+/* Adjust positioning of nameright and nameleft to avoid overlap with image */
+.nameright, .nameleft {
+    margin-top: -70px;
     margin-left: 140px;
     font-size: 20px;
-    padding-top: 15px;
-    color: #444444;
+    padding-top: 0x;
+    color: #000000;
+    font-weight: bold; /* Use font-weight instead of font: bolder */
 }
 
-.nameleft {
-    margin-left: 140px;
-    font-size: 20px;
-    padding-top: 15px;
-    color: #444444;
-}
-
-.sectionright {
+/* Adjust sectionright and sectionleft for better spacing */
+.sectionright, .sectionleft {
+    color: #000000;
+    margin-top: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
     font-size: 16px;
-    color: black;
-    margin-right: -150px;
-    padding-top: 55px;
 }
 
-.sectionleft {
-    font-size: 16px;
-    color: black;
-    margin-right: -150px;
-    padding-top: 55px;
+#sujal_p {
+    margin-top: 60px;
+}
+
+/* Button Styling */
+.Button {
+    margin-top: 10px; /* Space above the button */
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+}
+
+.Button button {
+    background-color: #333333; /* Dark background to match timeline circles */
+    color: #ffffff; /* White text for contrast */
+    padding: 10px 20px; /* Comfortable padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Readable text size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Hand cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.Button button:hover {
+    background-color: #555555; /* Slightly lighter on hover */
+    transform: scale(1.05); /* Slight scale-up effect on hover */
+}
+
+.Button button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Subtle focus shadow */
+}
+
+/* Responsive Button Styling */
+@media (max-width: 768px) {
+    .Button button {
+        padding: 8px 16px; /* Slightly smaller padding for smaller screens */
+        font-size: 14px; /* Smaller text size */
+    }
 }
