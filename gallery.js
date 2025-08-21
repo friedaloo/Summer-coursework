@@ -1,4 +1,3 @@
-// Image gallery data
 const galleryArray = [
   ['/Assets/art 1.jpg', '/Assets/art 2.jpg', '/Assets/art 3.jpg', '/Assets/art 4.jpg', '/Assets/art 5.jpg'],
   ['/Assets/art 6.jpg', '/Assets/art 7.jpg', '/Assets/art 8.jpg', '/Assets/art 9.jpg', '/Assets/art 10.jpg', '/Assets/art 11.jpg'],
@@ -6,15 +5,12 @@ const galleryArray = [
   ['/Assets/art 17.jpg', '/Assets/art 18.jpg', '/Assets/art 19.jpg', '/Assets/art 20.jpg', '/Assets/art 21.jpg', '/Assets/art 22.png']
 ];
 
-// Load favorites from storage
 let favoritesList = JSON.parse(localStorage.getItem("favoritesList")) || [];
 
-// Save favorites to storage
 function saveFavorites() {
   localStorage.setItem("favoritesList", JSON.stringify(favoritesList));
 }
 
-// Elements
 const popup = document.querySelector(".popup");
 const overlay = document.querySelector(".overlay");
 const body = document.querySelector("body");
@@ -25,7 +21,18 @@ const rows = document.querySelectorAll(".hero-row");
 
 let currentImagePath = null;
 
-// Open popup
+// Fav popup
+function showFavMessage(message) {
+  const favMsg = document.createElement("div");
+  favMsg.className = "fav-message";
+  favMsg.textContent = message;
+  document.body.appendChild(favMsg);
+
+  setTimeout(() => {
+    favMsg.remove();
+  }, 4000);
+}
+
 function openPopup(imagePath) {
   currentImagePath = imagePath;
   popupImage.src = imagePath;
@@ -40,7 +47,6 @@ function openPopup(imagePath) {
   }
 }
 
-// Close popup
 function closePopup() {
   popup.style.display = "none";
   overlay.style.display = "none";
@@ -49,27 +55,25 @@ function closePopup() {
   favoriteIcon.classList.remove("active");
 }
 
-// Events
 closeButton.addEventListener("click", closePopup);
 overlay.addEventListener("click", closePopup);
 
-// Toggle favorite
 favoriteIcon.addEventListener("click", () => {
   if (!currentImagePath) return;
 
   if (favoritesList.includes(currentImagePath)) {
     favoritesList = favoritesList.filter(img => img !== currentImagePath);
     favoriteIcon.classList.remove("active");
+    showFavMessage("Removed from Favorites");
   } else {
     favoritesList.push(currentImagePath);
     favoriteIcon.classList.add("active");
+    showFavMessage("Added to Favorites");
   }
 
   saveFavorites();
-  console.log("Favorites:", favoritesList);
 });
 
-// Open popup when clicking a gallery item
 rows.forEach((row, rowIndex) => {
   const boxes = row.querySelectorAll("div");
   boxes.forEach((box, colIndex) => {
