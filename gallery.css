@@ -225,7 +225,7 @@ body.disable-scroll {
 
 .popup-close {
     position: absolute;
-    right: 17px;
+    right: 0px;
     font-size: 36px;
     color: #333;
     cursor: pointer;

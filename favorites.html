@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artevo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="favorites.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {}
+    </style>
+</head>
+
+<body>
+    <!-- top navbar section-->
+    <div class="top-navbar">
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo"></div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search...">
+        </div>
+        <button class="login-btn">Login</button>
+        <i class="fa-solid fa-user"></i>
+    </div>
+
+    <!-- side panel -->
+    <div class="side-panel">
+        <div class="side-panel-header">
+            <i class="fa-solid fa-bars side-menu"></i>
+            <div class="logo"></div>
+        </div>
+        <div class="side-items">
+            <a href="#">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-user-group"></i>
+                <span>About us</span>
+            </a>
+            <a href="gallery.html">
+                <i class="fa-solid fa-images"></i>
+                <span>Gallery</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-star"></i>
+                <span>Favorites</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-newspaper"></i>
+                <span>Blog</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-comments"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+    </div>
+    <!-- main content -->
+    <div class="main">
+        <div class="main-inner">
+            <h1>Favorite <span>Arts</span></h1>
+            <div class="favorites-list">
+                <!-- Favorite items will be dynamically added here -->
+                <h1>You have no Favorite Arts yet!
+                    <a href="gallery.html" class="link-gallery">Go to Gallery</a>
+                </h1>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="favorites.js"></script>
+</body>
+
+</html>
