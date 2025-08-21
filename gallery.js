@@ -129,3 +129,10 @@ function removeAllFavorites() {
   saveFavorites();
   renderFavorites();
 }
+
+function removeFavorite(imagePath) {
+  favoritesList = favoritesList.filter(img => img !== imagePath);
+  saveFavorites();
+  renderFavorites();
+}
+
