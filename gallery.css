@@ -234,3 +234,7 @@ body.disable-scroll {
 .popup-close:hover {
     color: #ff0000;
 }
+
+.favorite-icon.active {
+  color: red; /* highlight when added */
+}
