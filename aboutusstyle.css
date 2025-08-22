@@ -67,7 +67,7 @@
     height: 375px;
     width: 300px;
     padding: 15px;
-    background-color: #A2AADB;
+    background-color: #333333;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -133,7 +133,7 @@
     margin-left: 140px;
     font-size: 20px;
     padding-top: 0x;
-    color: #000000;
+    color: #d9d9d9;
     font-weight: bold; /* Use font-weight instead of font: bolder */
 }
 
@@ -142,14 +142,14 @@
     margin-left: 140px;
     font-size: 20px;
     padding-top: 0x;
-    color: #000000;
+    color: #d9d9d9;
     font-weight: bold; /* Use font-weight instead of font: bolder */
 
 }
 
 /* Adjust sectionright and sectionleft for better spacing */
 .sectionright, .sectionleft {
-    color: #222222;
+    color: #c9c9c9;
     margin-top: 35px;
     padding-left: 5px;
     padding-right: 5px;
@@ -167,7 +167,7 @@
     margin-top: 55px; /* Space below the name */
     margin-bottom: 10px; /* Space above the article/section */
     font-size: 18px; /* Smaller font size for the description */
-    color: #333333; /* Dark color for readability */
+    color: #c9c9c9; /* Dark color for readability */
     font-weight: normal; /* Regular weight to distinguish from the name */
     text-align: center; /* Center the text */
 }
@@ -180,8 +180,8 @@
 }
 
 .Button button {
-    background-color: #333333; /* Dark background to match timeline circles */
-    color: #ffffff; /* White text for contrast */
+    background-color: #d9d9d9; /* Dark background to match timeline circles */
+    color: #000000; /* White text for contrast */
     padding: 10px 20px; /* Comfortable padding */
     border: none; /* Remove default border */
     border-radius: 5px; /* Rounded corners */
@@ -194,8 +194,9 @@
 
 
 .Button button:hover {
-    background-color: #555555; /* Slightly lighter on hover */
+    background-color: #666666; /* Slightly lighter on hover */
     transform: scale(1.05); /* Slight scale-up effect on hover */
+    color: #ffffff;
 }
 
 .Button button:focus {
@@ -246,10 +247,10 @@
 
 /* Description Styling */
 .description {
-    margin-top: 20px; /* Space below the name */
+    margin-top: 30px; /* Space below the name */
     margin-bottom: 10px; /* Space above the article/section */
     font-size: 18px; /* Smaller font size for the description */
-    color: #333333; /* Dark color for readability */
+    color: #d9d9d9; /* Dark color for readability */
     font-weight: normal; /* Regular weight to distinguish from the name */
-    text-align: center; /* Center the text */
+    text-align: left; /* Center the text */
 }
