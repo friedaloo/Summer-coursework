@@ -254,3 +254,13 @@
     font-weight: normal; /* Regular weight to distinguish from the name */
     text-align: left; /* Center the text */
 }
+
+.h1 {
+    font-size: 7rem;
+    color: #222;
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-style: italic;
+}
