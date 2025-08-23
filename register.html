@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Up Account</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #A2AADB; 
+        }
+
+        .form-container {
+            width: 400px;
+            background-color: #8B96D3; 
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container h2 {
+            color: white;
+            text-align: center;
+            margin: 0 0 20px 0;
+            font-size: 18px;
+        }
+
+        .radio-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: white;
+            font-size: 14px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background-color: white;
+            font-size: 14px;
+            box-sizing: border-box;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .terms-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 12px;
+        }
+
+        .terms-row input {
+            margin-right: 5px;
+        }
+
+        .terms-row label {
+            color: white;
+        }
+
+        .continue-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007B5E;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        .login-link {
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .login-link a {
+            color: #007B5E;
+            text-decoration: none;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Set up your account</h2>
+
+        <div class="radio-group">
+            <div class="radio-option">
+                <input type="radio" id="customer" name="role" checked>
+                <label for="customer">Customer</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" id="artist" name="role">
+                <label for="artist">Artist</label>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <input type="text" class="input-field" placeholder="First Name">
+        </div>
+
+        <div class="input-group">
+            <input type="text" class="input-field" placeholder="Last name">
+        </div>
+
+        <div class="input-group">
+            <input type="tel" class="input-field" placeholder="Mobile Number">
+        </div>
+
+        <div class="input-group">
+            <input type="email" class="input-field" placeholder="Email Address">
+        </div>
+
+        <div class="input-group">
+            <input type="password" class="input-field" placeholder="Password">
+        </div>
+
+        <div class="input-group">
+            <input type="password" class="input-field" placeholder="Confirm Password">
+        </div>
+
+        <div class="terms-row">
+            <input type="checkbox" id="agree">
+            <label for="agree">Agree Terms and Condition</label>
+        </div>
+
+        <button class="continue-btn">Continue</button>
+
+        <div class="login-link">
+            Already have an account? <a href="#">Sign in →</a>
+        </div>
+    </div>
+</body>
+</html>
