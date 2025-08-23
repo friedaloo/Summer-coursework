@@ -89,6 +89,11 @@ body {
     background: #0aa1a1;
 }
 
+.login-btn a {
+    color: white;
+    text-decoration: none;
+}
+
 /* User Icon */
 .fa-user {
     font-size: 20px;
