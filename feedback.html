@@ -3,69 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Feedback Form</title>
+     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        body {
+            
+            font-family: Arial, sans-serif;
+            background-color: #A2AADB;
+            margin: 0;
+            padding: 0px;
+        }
         
-        #main
-        {
-            padding-left: 30px;
+        .form-container {
+            background-color: #8B96D3;
+            border-radius: 10px;
+            padding: 30px;
+            width: 600px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             display: flex;
-            /* gap: 20px; */
-            justify-content: space-evenly;
+            flex-direction: column;
             align-items: center;
+            margin: 60px auto;
         }
-        #main1
-        {
-            height: 200px;
-            width: 300px;
+        
+        h2 {
+            color: white;
+            margin-top: 0;
+            margin-bottom: 10px;
         }
-        #ancient1
-        {
-            border-radius: 10px;
-            height: 170px;
-            width: 250px;   
+        
+        .description {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 14px;
         }
-        #main2
-        {
-            height: 200px;
-            width: 300px;
+        
+        .form-group {
+            margin-bottom: 15px;
         }
-        #ancient2
-        {
-            border-radius: 10px;
-            height: 170px;
-            width: 250px;   
+        
+        .textt{
+
+            width: 520px;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            background-color: #d9d9d9;
+            font-size: 14px;
         }
-        #main3
-        {
-            height: 200px;
-            width: 300px;
+        
+        textarea {
+            height: 120px;
+            resize: none;
         }
-        #ancient3
-        {
-            border-radius: 10px;
-            height: 170px;
-            width: 250px;   
+        
+        .radio-group {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 5px;
+            justify-content: space-between;
         }
-        #main4
-        {
-            height: 200px;
-            width: 300px;
+        
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
-        #ancient4
-        {
-            border-radius: 10px;
-            height: 170px;
-            width: 250px;   
+        
+        label {
+            color: white;
+            font-size: 14px;
+        }
+        
+        .submit-btn {
+            background-color: #007B5E;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 14px;
+            width: 100px;
+            margin-top: 15px;
+        }
+        
+        .submit-btn:hover {
+            background-color: #00654a;
         }
     </style>
 </head>
 <body>
-    <header>
-                <div class="top-navbar">
+     <!-- top navbar section-->
+    <div class="top-navbar">
         <div class="menu">
             <i class="fa-solid fa-bars"></i>
         </div>
@@ -111,45 +144,50 @@
             </a>
         </div>
     </div>
-    </header>
-    <h1 style="text-align: center;">
-        History of the Art
-    </h1>
-    <br>
-    <div id="main">
-        <div id="main1">
-            <img src="/img/Ancient.png" alt="picture of the ancient sculpture" id="ancient1">
-            <i style="padding-left: 50px">Pergamon Altar</i>
+
+    <div class="form-container">
+        <h1 style="color: white;">Feedback Form</h2>
+        <p class="description">We would love to hear your thoughts, suggestions, concerns or problems with anything so we can improve!</p>
+        
+        <div class="form-group">
+            <input class="textt" type="text" placeholder="First Name" required>
         </div>
-        <div id="main2">
-            <img src="/img/Egyptian.png" alt="picture made in the ancient Egyptian" id="ancient2">
-            <i style="padding-left: 50px;">Egyptian papyrus</i>
+        
+        <div class="form-group">
+            <input class="textt" type="text" placeholder="Last Name" required>
         </div>
-        <div id="main3">
-            <img src="/img/famous.png" alt="one of the most famous picture of leonardo da vinci" id="ancient3" >
-            <i style="padding-left: 50px;">The Last Supper</i>
+        
+        <div class="form-group">
+            <input class="textt" type="email" placeholder="Email address" required>
         </div>
-        <div id="main4">
-            <img src="/img/Rome.png" alt="one of the most famous picture in Rome" id="ancient4" >
-            <i style="padding-left: 50px">Flavian Amphitheatre</i>
+        
+        <div style="width: 100%;" class="form-group">
+            <p style="color: white; margin-bottom: 15px;">Feedback Type</p>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="comments" name="feedback-type" value="comments">
+                    <label for="comments">Comments</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="suggestions" name="feedback-type" value="suggestions">
+                    <label for="suggestions">Suggestions</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="questions" name="feedback-type" value="questions">
+                    <label for="questions">Questions</label>
+                </div>
+            </div>
         </div>
+        
+        <div class="form-group">
+            <p style="color: white; margin-bottom: 20px;">Describe your Feedback:</p>
+            <textarea class="textt" placeholder="Enter your feedback here..."></textarea>
+        </div>
+        
+        <button class="submit-btn">Submit</button>
     </div>
-    <p style="font-size: 24px; padding: 15px 60px; text-align: justify;">In the ancient times, particularly in Greek and Roman civilizations, art was not displayed in dedicated 
-        galleries as we know them today. Instead, it was integrated into religious life. Primary displays of 
-        sculpture and painting were found in temples, and government buildings. This art served functional purposes
-         to honor the gods, commemorate military victories, celebrate leaders, and decorate the spaces of the 
-         wealthy. Today the large number of ancient art can be seen in the original site of the archeological site
-          across Italy and Rome. However, many of the pieces of the art is removed indoors for preservation.
-          <br><br>
-          Later in the middle age art was mainly displayed in the churches and many art gallery opened like 
-           (The Uffizi Gallery in Florence and The Louvre Museum in Paris) these gallery made art gallery accessible 
-           to all. After that many galleries and museums opened across the world to reflect their growing culture of 
-           art in their country. While art in the ancient world served as public entertainment in temples and other
-            monuments, today it is displayed in dedicated art galleries and museums to reflect cultural and education. 
-            Art was shifted from religious devotion to culture prestige. You don't have to go to outside to sell your 
-            product by reaching the people house you can simply make it through online making it accessible globally.
-    </p>
-     <footer class="footer-bs">
+
+    <footer class="footer-bs">
         <div class="row">
             <div class="col-md-3 footer-brand animated fadeInLeft">
                 <h2>Artevo</h2>
@@ -200,6 +238,6 @@
             </div>
         </div>
     </footer>
-     <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
