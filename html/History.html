@@ -1,20 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artevo</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="gallery.css">
-    <!-- Font Awesome CDN -->
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+        #main
+        {
+            padding-left: 30px;
+            display: flex;
+            /* gap: 20px; */
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #main1
+        {
+            height: 200px;
+            width: 300px;
+        }
+        #ancient1
+        {
+            border-radius: 10px;
+            height: 170px;
+            width: 250px;   
+        }
+        #main2
+        {
+            height: 200px;
+            width: 300px;
+        }
+        #ancient2
+        {
+            border-radius: 10px;
+            height: 170px;
+            width: 250px;   
+        }
+        #main3
+        {
+            height: 200px;
+            width: 300px;
+        }
+        #ancient3
+        {
+            border-radius: 10px;
+            height: 170px;
+            width: 250px;   
+        }
+        #main4
+        {
+            height: 200px;
+            width: 300px;
+        }
+        #ancient4
+        {
+            border-radius: 10px;
+            height: 170px;
+            width: 250px;   
+        }
+    </style>
 </head>
-
 <body>
-    <!-- top navbar section-->
-    <div class="top-navbar">
+    <header>
+                <div class="top-navbar">
         <div class="menu">
             <i class="fa-solid fa-bars"></i>
         </div>
@@ -34,7 +85,7 @@
             <div class="logo"></div>
         </div>
         <div class="side-items">
-            <a href="index.html">
+            <a href="home-page.html">
                 <i class="fa-solid fa-house"></i>
                 <span>Home</span>
             </a>
@@ -60,41 +111,45 @@
             </a>
         </div>
     </div>
-    <div class="hero">
-        <div class="hero-row">
-            <div class="row1-box" style="background-image: url('/Assets/art\ 1.jpg');"></div>
-            <div class="row1-box" style="background-image: url('/Assets/art\ 2.jpg');"></div>
-            <div class="row1-box" style="background-image: url('/Assets/art\ 3.jpg');"></div>
-            <div class="row1-box" style="background-image: url('/Assets/art\ 4.jpg');"></div>
-            <div class="row1-box" style="background-image: url('/Assets/art\ 5.jpg');"></div>
+    </header>
+    <h1 style="text-align: center;">
+        History of the Art
+    </h1>
+    <br>
+    <div id="main">
+        <div id="main1">
+            <img src="../img/Ancient.png" alt="picture of the ancient sculpture" id="ancient1">
+            <i style="padding-left: 50px">Pergamon Altar</i>
         </div>
-        <div class="hero-row">
-            <div class="row2-box" style="background-image: url('/Assets/art\ 6.jpg');"></div>
-            <div class="row2-box" style="background-image: url('/Assets/art\ 7.jpg');"></div>
-            <div class="row2-box" style="background-image: url('/Assets/art\ 8.jpg');"></div>
-            <div class="row2-box" style="background-image: url('/Assets/art\ 9.jpg');"></div>
-            <div class="row2-box" style="background-image: url('/Assets/art\ 10.jpg');"></div>
-            <div class="row2-box" style="background-image: url('/Assets/art\ 11.jpg');"></div>
+        <div id="main2">
+            <img src="../img/Egyptian.png" alt="picture made in the ancient Egyptian" id="ancient2">
+            <i style="padding-left: 50px;">Egyptian papyrus</i>
         </div>
-        <div class="hero-row">
-            <div class="row3-box" style="background-image: url('/Assets/art\ 12.jpg');"></div>
-            <div class="row3-box" style="background-image: url('/Assets/art\ 13.jpg');"></div>
-            <div class="row3-box" style="background-image: url('/Assets/art\ 14.jpg');"></div>
-            <div class="row3-box" style="background-image: url('/Assets/art\ 15.jpg');"></div>
-            <div class="row3-box" style="background-image: url('/Assets/art\ 16.jpg');"></div>
+        <div id="main3">
+            <img src="../img/famous.png" alt="one of the most famous picture of leonardo da vinci" id="ancient3" >
+            <i style="padding-left: 50px;">The Last Supper</i>
         </div>
-        <div class="hero-row">
-            <div class="row4-box" style="background-image: url('/Assets/art\ 17.jpg');"></div>
-            <div class="row4-box" style="background-image: url('/Assets/art\ 18.jpg');"></div>
-            <div class="row4-box" style="background-image: url('/Assets/art\ 19.jpg');"></div>
-            <div class="row4-box" style="background-image: url('/Assets/art\ 20.jpg');"></div>
-            <div class="row4-box" style="background-image: url('/Assets/art\ 21.jpg');"></div>
-            <div class="row4-box" style="background-image: url('/Assets/art\ 22.png');"></div>
+        <div id="main4">
+            <img src="../img/Rome.png" alt="one of the most famous picture in Rome" id="ancient4" >
+            <i style="padding-left: 50px">Flavian Amphitheatre</i>
         </div>
     </div>
-
-    <!----------- Footer ------------>
-    <footer class="footer-bs">
+    <p style="font-size: 24px; padding: 15px 60px; text-align: justify;">In the ancient times, particularly in Greek and Roman civilizations, art was not displayed in dedicated 
+        galleries as we know them today. Instead, it was integrated into religious life. Primary displays of 
+        sculpture and painting were found in temples, and government buildings. This art served functional purposes
+         to honor the gods, commemorate military victories, celebrate leaders, and decorate the spaces of the 
+         wealthy. Today the large number of ancient art can be seen in the original site of the archeological site
+          across Italy and Rome. However, many of the pieces of the art is removed indoors for preservation.
+          <br><br>
+          Later in the middle age art was mainly displayed in the churches and many art gallery opened like 
+           (The Uffizi Gallery in Florence and The Louvre Museum in Paris) these gallery made art gallery accessible 
+           to all. After that many galleries and museums opened across the world to reflect their growing culture of 
+           art in their country. While art in the ancient world served as public entertainment in temples and other
+            monuments, today it is displayed in dedicated art galleries and museums to reflect cultural and education. 
+            Art was shifted from religious devotion to culture prestige. You don't have to go to outside to sell your 
+            product by reaching the people house you can simply make it through online making it accessible globally.
+    </p>
+     <footer class="footer-bs">
         <div class="row">
             <div class="col-md-3 footer-brand animated fadeInLeft">
                 <h2>Artevo</h2>
@@ -145,30 +200,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- code for gallery popup -->
-    <div class="overlay"></div>
-
-     <div class="popup">
-        <div class="popup-inner">
-            <div class="popup-img">
-                <img src="/Assets/art 3.jpg" alt="" class="img-content">
-            </div>
-            <div class="popup-description">
-                <i class="fa-solid fa-star favorite-icon"></i>
-                <i class="fa-solid fa-comment"></i>
-                <i class="fa-solid fa-share"></i>
-                <i class="fa-solid fa-ellipsis"></i>
-            </div>
-        </div>
-        <div class="popup-close">
-            <i class="fa-solid fa-circle-xmark"></i>
-        </div>
-     </div>
-
-    <!-- Scripts -->
-    <script src="script.js"></script>
-    <script src="gallery.js"></script>
+     <script src="../js/script.js"></script>
 </body>
-
 </html>

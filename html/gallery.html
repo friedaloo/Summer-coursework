@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artevo</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="favorites.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/gallery.css">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
             <div class="logo"></div>
         </div>
         <div class="side-items">
-            <a href="index.html">
+            <a href="home-page.html">
                 <i class="fa-solid fa-house"></i>
                 <span>Home</span>
             </a>
@@ -60,20 +60,39 @@
             </a>
         </div>
     </div>
-    <!-- main content -->
-    <div class="main">
-        <div class="main-inner">
-            <h1>Favorite <span>Arts</span></h1>
-            <button class="remove-all-btn" onclick="removeAllFavorites()">Remove All</button>
-            <div class="favorites-list">
-                <!-- Favorite items will be dynamically added here -->
-                <h1 class="fav-message">You have no Favorite Arts yet!
-                    <a href="gallery.html" class="link-gallery">Go to Gallery</a>
-                </h1>
-            </div>
+    <div class="hero">
+        <div class="hero-row">
+            <div class="row1-box" style="background-image: url('../assets/art 1.jpg');"></div>
+            <div class="row1-box" style="background-image: url('../assets/art 2.jpg');"></div>
+            <div class="row1-box" style="background-image: url('../assets/art 3.jpg');"></div>
+            <div class="row1-box" style="background-image: url('../assets/art 4.jpg');"></div>
+            <div class="row1-box" style="background-image: url('../assets/art 5.jpg');"></div>
+        </div>
+        <div class="hero-row">
+            <div class="row2-box" style="background-image: url('../assets/art 6.jpg');"></div>
+            <div class="row2-box" style="background-image: url('../assets/art 7.jpg');"></div>
+            <div class="row2-box" style="background-image: url('../assets/art 8.jpg');"></div>
+            <div class="row2-box" style="background-image: url('../assets/art 9.jpg');"></div>
+            <div class="row2-box" style="background-image: url('../assets/art 10.jpg');"></div>
+            <div class="row2-box" style="background-image: url('../assets/art 11.jpg');"></div>
+        </div>
+        <div class="hero-row">
+            <div class="row3-box" style="background-image: url('../assets/art 12.jpg');"></div>
+            <div class="row3-box" style="background-image: url('../assets/art 13.jpg');"></div>
+            <div class="row3-box" style="background-image: url('../assets/art 14.jpg');"></div>
+            <div class="row3-box" style="background-image: url('../assets/art 15.jpg');"></div>
+            <div class="row3-box" style="background-image: url('../assets/art 16.jpg');"></div>
+        </div>
+        <div class="hero-row">
+            <div class="row4-box" style="background-image: url('../assets/art 17.jpg');"></div>
+            <div class="row4-box" style="background-image: url('../assets/art 18.jpg');"></div>
+            <div class="row4-box" style="background-image: url('../assets/art 19.jpg');"></div>
+            <div class="row4-box" style="background-image: url('../assets/art 20.jpg');"></div>
+            <div class="row4-box" style="background-image: url('../assets/art 21.jpg');"></div>
+            <div class="row4-box" style="background-image: url('../assets/art 22.png');"></div>
         </div>
     </div>
-    
+
     <!----------- Footer ------------>
     <footer class="footer-bs">
         <div class="row">
@@ -126,8 +145,30 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
-    <script src="gallery.js"></script>
+
+    <!-- code for gallery popup -->
+    <div class="overlay"></div>
+
+     <div class="popup">
+        <div class="popup-inner">
+            <div class="popup-img">
+                <img src="../assets/art 3.jpg" alt="" class="img-content">
+            </div>
+            <div class="popup-description">
+                <i class="fa-solid fa-star favorite-icon"></i>
+                <i class="fa-solid fa-comment"></i>
+                <i class="fa-solid fa-share"></i>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+        </div>
+        <div class="popup-close">
+            <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+     </div>
+
+    <!-- Scripts -->
+    <script src="../js/script.js"></script>
+    <script src="../js/gallery.js"></script>
 </body>
 
 </html>
