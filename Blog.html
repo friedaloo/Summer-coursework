@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+        #cover
+        {
+            padding-left: 44px;
+        }
+        #cover-img
+        {
+            height: 500px;
+            width: 1080px;
+        }
+        #gallery
+        {
+            
+            margin-bottom: 30px;
+            display: flex;
+            gap: 30px;
+        }
+        #gallery1
+        {
+            transition: all 0.3s ease;
+            width: 368px;
+            height: 350px;
+            box-shadow: 0.5px 0.5px 5px rgb(113, 106, 106);
+            background-color: rgb(255, 255, 255);
+            
+        }
+        #gallery1:hover
+        {
+            box-shadow: 1px 1px 10px rgb(113, 106, 106);
+        }
+        #gallery1 img
+        {
+            transition: all 1s ease;
+        }
+        #gallery1:hover img
+        {
+            transform: scale(1.03);
+        }
+        #monalisa
+        {
+            transition: all 0.3s ease;
+            padding: 14px;
+            height: 200px;
+            width: 340px;
+        }
+        #monalisa:hover
+        {
+            transform: scale(1.03);
+        }
+        #gallery2
+        {
+            transition: all 0.3s ease;
+            width: 368px;
+            height: 350px;
+            box-shadow: 0.5px 0.5px 5px rgb(113, 106, 106);
+            background-color: rgb(255, 255, 255);
+        }
+        #gallery2:hover
+        {
+            box-shadow: 1px 1px 10px rgb(113, 106, 106);
+        }
+        #gallery2 img
+        {
+            transition: all 1s ease;
+        }
+        #gallery2:hover img
+        {
+            transform: scale(1.03);
+        }
+        #art
+        {
+            padding: 14px;
+            height: 200px;
+            width: 340px;
+        }
+        #gallery3
+        {
+            transition: all 0.3s ease;
+            width: 368px;
+            height: 350px;
+            box-shadow: 0.5px 0.5px 5px rgb(113, 106, 106);
+            background-color: rgb(255, 255, 255);
+        }
+        #gallery3:hover
+        {
+            box-shadow: 1px 1px 10px rgb(113, 106, 106);
+        }
+        #gallery3 img
+        {
+            transition: all 1s ease;
+        }
+        #gallery3:hover img
+        {
+            transform: scale(1.03);
+        }
+        #color
+        {
+            padding: 14px;
+            height: 200px;
+            width: 340px;
+        }
+        #second-gallery
+        {
+            display: flex;
+            gap: 15px;
+        }
+        #second1
+        {
+            transition: all 0.3s ease;
+            width: 368px;
+            height: 365px;
+            box-shadow: 0.5px 0.5px 5px rgb(113, 106, 106);
+            background-color: rgb(255, 255, 255);
+        }
+        #second1:hover
+        {
+            box-shadow: 1px 1px 10px rgb(113, 106, 106);
+        }
+        #second1 img
+        {
+            transition: all 1s ease;
+        }
+        #second1:hover img
+        {
+            transform: scale(1.03);
+        }
+        #second2
+        {
+            transition: all 0.3s ease;
+            width: 368px;
+            height: 365px;
+            box-shadow: 0.5px 0.5px 5px rgb(113, 106, 106);
+            background-color: rgb(255, 255, 255);
+        }
+        #second2:hover
+        {
+            box-shadow: 1px 1px 10px rgb(113, 106, 106);
+        }
+        #second2 img
+        {
+            transition: all 1s ease;
+        }
+        #second2:hover img
+        {
+            transform: scale(1.03);
+        }
+        #richer
+        {
+            padding: 14px;
+            height: 200px;
+            width: 340px;
+        }
+        #secondimg
+        {
+            padding: 14px;
+            height: 200px;
+            width: 340px;
+        }
+        main {
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-navbar">
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo"></div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search...">
+        </div>
+        <button class="login-btn">Login</button>
+        <i class="fa-solid fa-user"></i>
+    </div>
+
+    <!-- side panel -->
+    <div class="side-panel">
+        <div class="side-panel-header">
+            <i class="fa-solid fa-bars side-menu"></i>
+            <div class="logo"></div>
+        </div>
+        <div class="side-items">
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+            <a href="about_us.html">
+                <i class="fa-solid fa-user-group"></i>
+                <span>About us</span>
+            </a>
+            <a href="gallery.html">
+                <i class="fa-solid fa-images"></i>
+                <span>Gallery</span>
+            </a>
+            <a href="favorites.html">
+                <i class="fa-solid fa-star"></i>
+                <span>Favorites</span>
+            </a>
+            <a href="Blog.html">
+                <i class="fa-solid fa-newspaper"></i>
+                <span>Blog</span>
+            </a>
+            <a href="contact.html">
+                <i class="fa-solid fa-comments"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+    </div>
+    </header>
+    <main>
+        <div id="cover">
+            <img src="/img/Coverimg.png" alt="Picture of the art around the walls" id="cover-img">
+        </div>
+        <br><br><br><br>
+        <div id="gallery">
+            <a href="/History.html" target="_main" style="text-decoration: none; color: inherit;">
+                <div id="gallery1">
+                    <img src="/img/Monalisa.png" alt="picture of the Monalisa" id="monalisa">
+                    <h3 style="padding: 0px 14px 0px 14px;"><b>The History of the Art</b></h3>
+                    <p style="padding: 0px 14px 0px 14px;">In the ancient world, particularly in Greek and Roman civilizations, <b style="color: blue;">Readmore</b></p>
+                </div>
+            </a>
+            <a href="/Artwork.html" target="_main" style="text-decoration: none; color: inherit;">
+                <div id="gallery2">
+                    <img src="/img/Culture.png" alt="picture of the art" id="art">
+                    <h3 style="padding: 0px 14px 0px 14px;"><b>Artwork Collection</b></h3>
+                    <p style="padding: 0px 14px 0px 14px;">In the ancient world, particularly in Greek and Roman civilizations, <b style="color: blue;">Readmore</b></p>
+                </div>
+            </a>
+            <a href="/material.html" target="_main" style="text-decoration: none; color: inherit;">
+                <div id="gallery3">
+                    <img src="/img/Material.png" alt="picture of material used in art" id="color">
+                    <h3 style="padding: 0px 14px 0px 14px;"><b>The material and tools used in the Art</b></h3>
+                    <p style="padding: 0px 14px 0px 14px;">In the ancient world, particularly in Greek and Roman civilizations, <b style="color: blue;">Readmore</b></p>
+                </div>
+            </a>
+        </div>
+        <br><br>
+        <div id="second-gallery">
+            <a href="/Interview.html" target="_main" style="text-decoration: none; color: inherit;">
+                <div id="second1">
+                    <img src="/img/Richter.png" alt="picture of one of the famous artist" id="richer">
+                    <h3 style="padding: 0px 14px 0px 14px;"><b>Interview with one of the best artist, Gerhard Richter</b></h3>
+                    <p style="padding: 0px 14px 0px 14px;">In his latest interview he talks about his long career and evolving approach to <b style="color: blue;">Readmore</b></p>
+                </div>
+            </a>
+            <a href="/upcomming.html" target="_main" style="text-decoration: none; color: inherit;">
+                <div id="second2">
+                    <img src="/img/Upcomming.png" alt="picture of the art" id="secondimg">
+                    <h3 style="padding: 0px 14px 0px 14px;"><b>Upcomming Events</b></h3>
+                    <p style="padding: 0px 14px 0px 14px;">In the ancient world, particularly in Greek and Roman civilizations, <b style="color: blue;">Readmore</b></a></p>
+                </div>
+            </a>
+        </div>
+    </main>
+     <footer class="footer-bs">
+        <div class="row">
+            <div class="col-md-3 footer-brand animated fadeInLeft">
+                <h2>Artevo</h2>
+                <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies.
+                    Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex
+                    mi ut sem.</p>
+                <p>© 2025 Artevo, All rights reserved</p>
+            </div>
+            <div class="col-md-4 footer-nav animated fadeInUp">
+                <h4>Menu —</h4>
+                <div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Explores</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Feedbacks</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 footer-social animated fadeInDown">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-ns animated fadeInRight">
+                <h4>Mail</h4>
+                <p>See you in the inbox!</p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="artevo@gmail.com">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <script src="script.js"></script>
+</body>
+</html>
