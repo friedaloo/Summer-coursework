@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        div
+        {
+            font-weight: normal;
+        }
+        
+        #full-div
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .events
+        {
+            background-color: #fefefe;
+            display: flex;
+            gap: 30px;
+            /* margin-left: 150px; */
+            margin-bottom: 35px;
+            height: 370px;
+            width: 950px;
+            transition: all 0.3s ease-out;
+            box-shadow: 0px 0.5px 14px -5px;
+            
+        }
+        #picture
+        {
+            padding-top: 15px;
+            padding: 15px;
+            height: 200px;
+            width: 200px;
+            transition: transform 0.3s ease-in-out;
+        }
+        #picture:hover
+        {
+            transform: scale(1.04);
+        }
+        .cevents
+        {
+            background-color: #fefefe;
+            display: flex;
+            gap: 30px;
+            /* margin-left: 150px; */
+            margin-bottom: 35px;
+            height: 260px;
+            width: 950px; 
+            box-shadow: 0px 0.5px 14px -5px;
+            transition: all 0.3s ease-out;
+            
+        }
+        #cpicture
+        {
+            padding-top: 15px;
+            padding: 15px;
+            height: 200px;
+            width: 200px;
+            transition: transform 0.3s ease-in-out;
+        }
+        #cpicture:hover
+        {
+            transform: scale(1.04);
+        }
+        .hevents
+        {
+            background-color: #fefefe;
+            display: flex;
+            gap: 30px;
+            /* margin-left: 150px; */
+            margin-bottom: 35px;
+            height: 240px;
+            width: 950px; 
+            box-shadow: 0px 0.5px 14px -5px;
+            transition: all 0.3s ease-out;
+            
+        }
+        
+        #hpicture
+        {
+            padding-top: 15px;
+            padding: 15px;
+            height: 200px;
+            width: 200px;
+            transition: transform 0.3s ease-in-out;
+        }
+        #hpicture:hover
+        {
+            transform: scale(1.04);
+        }
+    </style>
+</head>
+<body>
+    <header>
+                <div class="top-navbar">
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo"></div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search...">
+        </div>
+        <button class="login-btn">Login</button>
+        <i class="fa-solid fa-user"></i>
+    </div>
+
+    <!-- side panel -->
+    <div class="side-panel">
+        <div class="side-panel-header">
+            <i class="fa-solid fa-bars side-menu"></i>
+            <div class="logo"></div>
+        </div>
+        <div class="side-items">
+            <a href="#">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-user-group"></i>
+                <span>About us</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-images"></i>
+                <span>Gallery</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-star"></i>
+                <span>Favorites</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-newspaper"></i>
+                <span>Blog</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-comments"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+    </div>
+    </header>
+        </h1>
+        <h1 style="color: brown; text-align: center;">
+            Upcomming Events
+        </h1>
+        <br>
+        <br>
+        <div id="full-div">
+            <div class="events">
+                <div>
+                    <img src="/img/Events.png" alt="picture of paris art 2024" id="picture">
+                </div>
+                <div id="description">
+                    <h2><b><u>Paris Photo</u></b></h2>
+                    <p>Nov 13-16, 2025</p>
+                    <h2>
+                        Description :
+                    </h2>
+                    <div style="padding-right: 20px;">
+                        World's largest international photography fair. Celebrating its 28th edition in Grand 
+                        Palais, Paris on 13-16 November 2025, this fair continues to bridge the historic and the 
+                        contemporary, offering a dynamic, thought-provoking platform for the medium. The 2025 fair 
+                        will feature approximately 224 exhibitors, comprising 183 galleries and 41 publishers from 
+                        33 countries, including over 60 first-time participants. Ticketing range form 26 Euro to 
+                        450 Euro depending on the access level.
+                        The fair is structured into five key sectors:
+                        <br>
+                        *   Main (with the immersive Prisms projects).
+                        <br>
+                        *   Emergence (solo projects from young galleries/artists).
+                        <br>
+                        *   Digital (cutting-edge digital and AI-based photography).
+                        <br>
+                        *   Voices (highlighting curated contemporary themes).
+                        <br>
+                        *   Book (publishing and photobook showcases).
+                    </div>
+                </div>
+
+            </div>
+            <div class="cevents">
+                <div id="scr">
+                    <img src="/img/ArtX.png" alt="picture of upcomming event Art X" id="cpicture">
+                </div>
+                <div id="cdescription">
+                    <h2><b><u>ART X Lagos 2025</u></b></h2>
+                    <p> Nov 6-9, 2026</p>
+                    <h2>
+                        Description :
+                    </h2>
+                    <div style="padding-right: 20px;">
+                        ART X Lagos returns for its milestone tenth edition as the premier contemporary art fair 
+                        in West Africa. The fair has grown into a global cultural catalyst—featuring galleries and 
+                        artists from over 70 countries and drawing visitors from 170 nations. This event is 
+                        organized to forges cross continental connections, helps shape the dialogue around African 
+                        art, and consistently features heads and voices like El Anatsui. The key highlights of this
+                         events is theme, special projects, live music and talks.
+                    </div>
+                </div>      
+            </div>  
+            <div class="hevents">
+                <div id="scr">
+                    <img src="/img/Shanghai.png" alt="picture of a comapany in Shanghai" id="hpicture">
+                </div>
+                <div id="hdescription">
+                    <h2><b><u>15th Shanghai Biennale</u></b></h2>
+                    <p>Nov 7, 2025- April 26, 2026</p>
+                    <h2>
+                        Description :
+                    </h2>
+                    <div style="padding-right: 20px;">
+                       It is one is huge event that takes place in Shanghai China. The theme of this event is Does 
+                       the Flower Hear the Bee? which means sensory communication between humans, art, and nature. 
+                       This event focus on interspecies intelligence, sensory experience, cultural memory, craft, 
+                       Indigenous perspectives, AI & tech.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <br>
+     <footer class="footer-bs">
+        <div class="row">
+            <div class="col-md-3 footer-brand animated fadeInLeft">
+                <h2>Artevo</h2>
+                <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies.
+                    Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex
+                    mi ut sem.</p>
+                <p>© 2025 Artevo, All rights reserved</p>
+            </div>
+            <div class="col-md-4 footer-nav animated fadeInUp">
+                <h4>Menu —</h4>
+                <div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Explores</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Feedbacks</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 footer-social animated fadeInDown">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-ns animated fadeInRight">
+                <h4>Mail</h4>
+                <p>See you in the inbox!</p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="artevo@gmail.com">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+ <script src="script.js"></script>
+</body>
+</html>
