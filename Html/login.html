@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../Css/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #A2AADB; 
+        }
+
+        .login-container {
+            width: 400px;
+            background-color: #8B96D3; 
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container h2 {
+            color: white;
+            text-align: center;
+            margin: 0 0 10px 0;
+            font-size: 20px;
+        }
+
+        .login-container p {
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            margin: 0 0 25px 0;
+        }
+
+        .login-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: white;
+            border: none;
+            border-radius: 8px;
+            color: #333;
+            font-size: 14px;
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .google-btn {
+            display: flex;
+            justify-content: flex-start;
+            gap: 50px;
+            padding-left: 100px;
+        }
+
+         .facebook-btn {
+            display: flex;
+            justify-content: flex-start;
+            gap: 50px;
+            padding-left: 100px;
+        }
+
+        .or-divider {
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .or-divider::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .or-divider span {
+            position: relative;
+            background-color: #a3b5e0;
+            padding: 0 10px;
+            z-index: 1;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-label {
+            display: block;
+            color: white;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background-color: white;
+            font-size: 14px;
+            box-sizing: border-box;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .remember-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 12px;
+        }
+
+        .remember-row input {
+            margin-right: 5px;
+        }
+
+        .forgot-password {
+            color: white;
+            text-decoration: none;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .login-btn-submit {
+            width: 100%;
+            padding: 12px;
+            background-color: #007B5E;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .signup-link {
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .signup-link a {
+            color: #007B5E;
+            text-decoration: none;
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="back-button">
+        <a href="javascript:history.back()">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+    </div>
+    <div class="login-container">
+        <h2>Login to your Account</h2>
+        <p>See what's going on with your business</p>
+
+        <button class="login-btn google-btn">
+            <i class="fa-brands fa-google"></i> Login with Google
+        </button>
+
+        <button class="login-btn facebook-btn">
+            <i class="fa-brands fa-facebook"></i> Login with Facebook
+        </button>
+
+        <div class="or-divider">
+            <span>OR</span>
+        </div>
+
+        <div class="input-group">
+            <label class="input-label">Email</label>
+            <input type="email" class="input-field" placeholder="example@gmail.com">
+        </div>
+
+        <div class="input-group">
+            <label class="input-label">Password</label>
+            <input type="password" class="input-field" placeholder="********">
+        </div>
+
+        <div class="remember-row">
+            <span>
+                <input type="checkbox" id="remember">
+                <label for="remember" style="color: white;">Remember me</label>
+            </span>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+        </div>
+
+        <button class="login-btn-submit">Login</button>
+
+        <div class="signup-link">
+            Don't have an account? <a href="register.html">Register</a>
+        </div>
+    </div>
+</body>
+</html>

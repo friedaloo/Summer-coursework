@@ -1,103 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback Form</title>
-     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="gallery.css">
+    <title>Artevo</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/favorites.css">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            
-            font-family: Arial, sans-serif;
-            background-color: #A2AADB;
-            margin: 0;
-            padding: 0px;
-        }
-        
-        .form-container {
-            background-color: #8B96D3;
-            border-radius: 10px;
-            padding: 30px;
-            width: 600px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 60px auto;
-        }
-        
-        h2 {
-            color: white;
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
-        
-        .description {
-            color: white;
-            margin-bottom: 20px;
-            font-size: 14px;
-        }
-        
-        .form-group {
-            margin-bottom: 15px;
-        }
-        
-        .textt{
-
-            width: 520px;
-            padding: 10px;
-            border: none;
-            border-radius: 8px;
-            background-color: #d9d9d9;
-            font-size: 14px;
-        }
-        
-        textarea {
-            height: 120px;
-            resize: none;
-        }
-        
-        .radio-group {
-            display: flex;
-            gap: 40px;
-            margin-bottom: 5px;
-            justify-content: space-between;
-        }
-        
-        .radio-option {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        
-        label {
-            color: white;
-            font-size: 14px;
-        }
-        
-        .submit-btn {
-            background-color: #007B5E;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 14px;
-            width: 100px;
-            margin-top: 15px;
-        }
-        
-        .submit-btn:hover {
-            background-color: #00654a;
-        }
-    </style>
 </head>
+
 <body>
-     <!-- top navbar section-->
+    <!-- top navbar section-->
     <div class="top-navbar">
         <div class="menu">
             <i class="fa-solid fa-bars"></i>
@@ -107,7 +23,7 @@
             <i class="fa-solid fa-magnifying-glass"></i>
             <input type="text" placeholder="Search...">
         </div>
-        <button class="login-btn">Login</button>
+        <button class="login-btn"><a href="login.html">Login</a></button>
         <i class="fa-solid fa-user"></i>
     </div>
 
@@ -144,49 +60,21 @@
             </a>
         </div>
     </div>
-
-    <div class="form-container">
-        <h1 style="color: white;">Feedback Form</h2>
-        <p class="description">We would love to hear your thoughts, suggestions, concerns or problems with anything so we can improve!</p>
-        
-        <div class="form-group">
-            <input class="textt" type="text" placeholder="First Name" required>
-        </div>
-        
-        <div class="form-group">
-            <input class="textt" type="text" placeholder="Last Name" required>
-        </div>
-        
-        <div class="form-group">
-            <input class="textt" type="email" placeholder="Email address" required>
-        </div>
-        
-        <div style="width: 100%;" class="form-group">
-            <p style="color: white; margin-bottom: 15px;">Feedback Type</p>
-            <div class="radio-group">
-                <div class="radio-option">
-                    <input type="radio" id="comments" name="feedback-type" value="comments">
-                    <label for="comments">Comments</label>
-                </div>
-                <div class="radio-option">
-                    <input type="radio" id="suggestions" name="feedback-type" value="suggestions">
-                    <label for="suggestions">Suggestions</label>
-                </div>
-                <div class="radio-option">
-                    <input type="radio" id="questions" name="feedback-type" value="questions">
-                    <label for="questions">Questions</label>
-                </div>
+    <!-- main content -->
+    <div class="main">
+        <div class="main-inner">
+            <h1>Favorite <span>Arts</span></h1>
+            <button class="remove-all-btn" onclick="removeAllFavorites()">Remove All</button>
+            <div class="favorites-list">
+                <!-- Favorite items will be dynamically added here -->
+                <h1 class="fav-message">You have no Favorite Arts yet!
+                    <a href="gallery.html" class="link-gallery">Go to Gallery</a>
+                </h1>
             </div>
         </div>
-        
-        <div class="form-group">
-            <p style="color: white; margin-bottom: 20px;">Describe your Feedback:</p>
-            <textarea class="textt" placeholder="Enter your feedback here..."></textarea>
-        </div>
-        
-        <button class="submit-btn">Submit</button>
     </div>
-
+    
+    <!----------- Footer ------------>
     <footer class="footer-bs">
         <div class="row">
             <div class="col-md-3 footer-brand animated fadeInLeft">
@@ -238,6 +126,8 @@
             </div>
         </div>
     </footer>
-<script src="script.js"></script>
+    <script src="../JS/gallery.js"></script>
+    <script src="../JS/script.js"></script>
 </body>
+
 </html>
