@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #A2aadb;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            color: white;
+        }
+
+        /* styling for picture and detail container */
+        .top_container {
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        /* styling for profile pic */
+        .profile_pic {
+            height: 65%;
+            width: 25%;
+            /* background-color: red; */
+            border-radius: 50%;
+            background-image: url("/Assets/prakashimage.jpg");
+            background-size: cover;
+            background-position: center;
+            margin-left: 8%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* styling for profile text */
+        .profile_detail {
+            height: 46%;
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        /* styling for social links */
+        .social_links {
+            height: 60px;
+            width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .social_links a {
+            font-size: 4rem;
+        }
+
+        #text {
+            height: 40px;
+            margin-top: 5%;
+            margin-left: 5%;
+            font-size: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #142C3E;
+            font-weight: bolder;
+        }
+
+        /* styling for Details and skill of student */
+        .detail_outer_container {
+            height: 750px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .detail_inner_container {
+            height: 40%;
+            width: 45%;
+            border-radius: 20px;
+            background-color: #333333;
+        }
+
+        .detail_inner_container h3 {
+            margin-top: 3%;
+            background-color: transparent;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .detail_inner_container ul {
+            margin-top: 3%;
+            margin-left: 9%;
+            background-color: transparent;
+            font-size: 20px;
+        }
+
+        .detail_inner_container li {
+            background-color: transparent;
+            margin-bottom: 2%;
+        }
+
+        .detail_inner_container span {
+            background-color: transparent;
+        }
+
+
+        .detail_inner_container a {
+            background-color: transparent;
+            font-weight: bold;
+            font-size: 19px;
+            text-decoration: none;
+            /* cursor: pointer; */
+            color: white;
+        }
+
+
+        .skill_list li {
+            margin-bottom: 1%;
+        }
+
+        .skill_category {
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+                <div class="top-navbar">
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo"></div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search...">
+        </div>
+        <button class="login-btn">Login</button>
+        <i class="fa-solid fa-user"></i>
+    </div>
+
+    <!-- side panel -->
+    <div class="side-panel">
+        <div class="side-panel-header">
+            <i class="fa-solid fa-bars side-menu"></i>
+            <div class="logo"></div>
+        </div>
+        <div class="side-items">
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+            <a href="about_us.html">
+                <i class="fa-solid fa-user-group"></i>
+                <span>About us</span>
+            </a>
+            <a href="gallery.html">
+                <i class="fa-solid fa-images"></i>
+                <span>Gallery</span>
+            </a>
+            <a href="favorites.html">
+                <i class="fa-solid fa-star"></i>
+                <span>Favorites</span>
+            </a>
+            <a href="Blog.html">
+                <i class="fa-solid fa-newspaper"></i>
+                <span>Blog</span>
+            </a>
+            <a href="feedback.html">
+                <i class="fa-solid fa-comments"></i>
+                <span>Feedback</span>
+            </a>
+        </div>
+    </div>
+    </header>
+    <!-- back button -->
+    <div class="back-button">
+        <a href="javascript:history.back()">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+    </div>
+    <!-- main content -->
+
+    <section>
+        <div class="top_container">
+            <div class="profile_pic"></div>
+            <div class="profile_detail">
+                <div>
+                    <p style="font-size: 50px; font-weight: bolder; color: black;">I'm <span style="color: #0d8686;">Prakash Bista</span>,</p>
+                    <p style="font-size: 32px; color: black;">CS student | 21 yrs old | China</p>
+                </div>
+                <div class="social_links">
+                    <a href="https://www.facebook.com/profile.php?id=100091403181699">
+                        <i class="fa-brands fa-facebook" style="color: #142C3E;"></i>
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <i class="fa-brands fa-instagram" style="color: #142C3E;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com">
+                        <i class="fa-brands fa-linkedin" style="color: #142C3E;"></i>
+                    </a>
+                    <a href="https://wa.link/aixv91">
+                        <i class="fa-brands fa-whatsapp" style="color: #142C3E;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <p id="text">More Details</p>
+    <!-- Details container of the Student -->
+    <section>
+        <div class="detail_outer_container">
+            <div class="detail_inner_container">
+                <h3>Details</h3>
+                <ul>
+                    <li><span>Name</span> : Prakash Bista</li>
+                    <li><span>Age</span> : 21</li>
+                    <li><span>Gender</span> : Male</li>
+                    <li><span>Location</span> : Bouddha, Kathmandu</li>
+                    <li><span>Contact</span> : +977 9761607488</li>
+                </ul>
+            </div>
+
+            <div class="detail_inner_container">
+                <h3>Skills</h3>
+                <div class="skill_category">
+                    <ul class="skill_list"><a>Programming Skills</a>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>Java</li>
+                        <li>Php</li>
+
+                    </ul>
+                    <ul class="skill_list" style="margin-right: 15%;"><a>MS Office Skills</a>
+                        <li>Word</li>
+                        <li>Powerpoint</li>
+                        <li>Excel</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="detail_inner_container">
+                <h3>Education</h3>
+                <ul>
+                    <li><span>School</span> : Arunima H.S.S</li>
+                    <li><span>+2</span> : Goldengate int'l clge</li>
+                    <li><span>Bachelors</span> : Islington College</li>
+                </ul>
+            </div>
+
+            <div class="detail_inner_container">
+                <h3>Language</h3>
+                <ul>
+                    <li><span>Nepali</span></li>
+                    <li><span>English</span></li>
+                    <li><span>Marathi</span></li>
+                    <li><span>Chinese</span></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </section>
+
+     <footer class="footer-bs">
+        <div class="row">
+            <div class="col-md-3 footer-brand animated fadeInLeft">
+                <h2>Artevo</h2>
+                <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies.
+                    Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex
+                    mi ut sem.</p>
+                <p>© 2025 Artevo, All rights reserved</p>
+            </div>
+            <div class="col-md-4 footer-nav animated fadeInUp">
+                <h4>Menu —</h4>
+                <div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Explores</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Feedbacks</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 footer-social animated fadeInDown">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-ns animated fadeInRight">
+                <h4>Mail</h4>
+                <p>See you in the inbox!</p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="artevo@gmail.com">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <script src="script.js"></script>
+</body>
+</html>

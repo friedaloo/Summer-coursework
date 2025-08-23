@@ -10,17 +10,44 @@
 </head>
 <style>
     
+    body {
+        background-color: #A2AADB;
+    }
+
     #main
     {
         display: flex;
         gap: 50px;
+        justify-content: center;
+        margin-bottom: 30px;
+        background-color: #A2AADB;
     }
-    #main1
+    #main1, #main2
     {
         height: 600px;
         width: 550px;
-        background-color: rgb(214, 217, 217);
+        background-color: #333333;
+        border-radius: 5px;
+        box-shadow: 5px 2px 5px #888888;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #ffffff;
     }
+
+    #main1 p, #main2 p {
+        margin: 0 30px;
+    }
+
+    #main1 img, #main2 img {
+        border-radius: 5px;
+        transition: transform 0.3s ease;
+    }
+
+    #main1 img:hover, #main2 img:hover {
+       transform: scale(1.01);
+    }
+
     #top1
     {
         height: 380px;
@@ -28,17 +55,32 @@
         padding: 10px;
     }
     
-    #main2
+    /* #main2
     {
         height: 600px;
         width: 550px;
         background-color: rgb(214, 217, 217);
-    }
+        border-radius: 5px;
+        box-shadow: 5px 2px 5px #888888;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
     #top2
     {
         height: 380px;
         width: 530px;
         padding: 10px;
+    }
+
+    h1 {
+        font-size: 6rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+    h1 span {
+        color: #0d8686;
     }
 </style>
 <body>
@@ -83,16 +125,22 @@
                 <i class="fa-solid fa-newspaper"></i>
                 <span>Blog</span>
             </a>
-            <a href="contact.html">
+            <a href="feedback.html">
                 <i class="fa-solid fa-comments"></i>
-                <span>Contact</span>
+                <span>Feedback</span>
             </a>
         </div>
     </div>
     </header>
+    <!-- back button -->
+    <div class="back-button">
+        <a href="javascript:history.back()">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+    </div>
     <main>
         <h1 style="text-align: center;">
-            Collecion of Art
+            Collection of <span>Masterpieces</span>
         </h1>
         <br>
         <h2 style="text-align: center;">
