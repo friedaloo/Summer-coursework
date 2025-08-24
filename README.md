@@ -15,3 +15,8 @@ NAME OF THE MEMBERS:
 3. Gaurab Tandukar -    { Git/Branch/Code manager  } - https://github.com/Gaurab-Tandukar
 4. Sujal Pokhrel -      { Documentation } - https://github.com/SujalPokhrel8585
 5. Samundra Adhikari -  { UI/UX designer } - https://github.com/Juicy321
+
+
+NETIFY - https://meek-taffy-591e34.netlify.app/
+
+Github -
