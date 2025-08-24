@@ -10,8 +10,8 @@ the project is  assessed through:
 **We will be diving roles among the member and do our own respective things.**
 
 NAME OF THE MEMBERS:
-1. Yathechya Shrestha - { Team leader }
-2. Prakash Bista -      { Mascot }
-3. Gaurab Tandukar -    { Git/Branch/Code manager  }
-4. Sujal Pokhrel -      { Documentation }
-5. Samundra Adhikari -  { UI/UX designer }
+1. Yathechya Shrestha - { Team leader } - https://github.com/friedaloo
+2. Prakash Bista -      { Content Manage } - https://github.com/Prakash-Bista
+3. Gaurab Tandukar -    { Git/Branch/Code manager  } - https://github.com/Gaurab-Tandukar
+4. Sujal Pokhrel -      { Documentation } - https://github.com/SujalPokhrel8585
+5. Samundra Adhikari -  { UI/UX designer } - https://github.com/Juicy321
