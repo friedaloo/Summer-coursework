@@ -1,0 +1,266 @@
+/*Middle section*/
+/* Timeline Container */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    margin-bottom: 80px;
+   /* min-height: 100vh; /* Ensures it takes full height */
+}
+
+/* Circles */
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: #333333;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.top-circle {
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    top: 20px;
+}
+
+.bottom-circle {
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    bottom: 20px;
+}
+
+/* Vertical Line */
+.line {
+    height: 2400px;
+    position: absolute;
+    top: 40px; /* Below top circle */
+    bottom: 40px; /* Above bottom circle */
+    left: 50%;
+    width: 2px;
+    background-color: #333333;
+    transform: translateX(-50%);
+    
+}
+
+/* Timeline Items Container */
+.timeline-items {
+    position: relative;
+    padding: 60px 0; /* Space for top and bottom circles */
+}
+
+/* Timeline Item */
+.timeline-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px; /* Space between items */
+    position: relative;
+}
+
+/* Card Styling */
+.card {
+    height: 375px;
+    width: 300px;
+    padding: 15px;
+    background-color: #333333;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Card on Right */
+.card_right {
+    margin-top: 20px;
+    margin-left: 500px; /* Distance from center line */
+    color: #000000;
+}
+
+/* Card on Left */
+.card_left {
+    margin-top: 20px;
+    margin-right: 500px; /* Distance from center line */
+    align-self: flex-end;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .line {
+        left: 20px;
+    }
+    .circle {
+        left: 20px;
+    }
+    .top-circle {
+        top: 10px;
+    }
+    .bottom-circle {
+        bottom: 10px;
+    }
+    .card_right, .card_left {
+        margin: 20px 0 0 40px;
+        text-align: left;
+    }
+}
+
+
+
+.img_circle1, .img_circle2, .img_circle3, .img_circle4, .img_circle5 {
+    height: 115px;
+    width: 115px;
+    border-radius: 50%; /* Use 50% for perfect circle */
+    overflow: hidden; /* Ensures image is clipped to circle */
+    background-color: #d9d9d9; /* Fallback background if image fails to load */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_circle1 img, .img_circle2 img, .img_circle3 img, .img_circle4 img, .img_circle5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the circle without distortion */
+    object-position: center; /* Centers the image */
+}
+
+/* Adjust positioning of nameright and nameleft to avoid overlap with image */
+.nameright, .nameleft {
+    margin-top: -70px;
+    margin-left: 140px;
+    font-size: 20px;
+    padding-top: 0x;
+    color: #d9d9d9;
+    font-weight: bold; /* Use font-weight instead of font: bolder */
+}
+
+.nameleft {
+    margin-top: -70px;
+    margin-left: 140px;
+    font-size: 20px;
+    padding-top: 0x;
+    color: #d9d9d9;
+    font-weight: bold; /* Use font-weight instead of font: bolder */
+
+}
+
+/* Adjust sectionright and sectionleft for better spacing */
+.sectionright, .sectionleft {
+    color: #c9c9c9;
+    margin-top: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 16px;
+}
+
+#sujal_p {
+    margin-top: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: -2px;
+}
+
+#sujal_p_desc {
+    margin-top: 55px; /* Space below the name */
+    margin-bottom: 10px; /* Space above the article/section */
+    font-size: 18px; /* Smaller font size for the description */
+    color: #c9c9c9; /* Dark color for readability */
+    font-weight: normal; /* Regular weight to distinguish from the name */
+    text-align: center; /* Center the text */
+}
+
+/* Button Styling */
+.Button {
+    margin-top: 10px; /* Space above the button */
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+}
+
+.Button button {
+    background-color: #0d8686; /* Dark background to match timeline circles */
+    color: #fff; /* White text for contrast */
+    padding: 10px 20px; /* Comfortable padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Readable text size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Hand cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+
+
+.Button button:hover {
+    background-color: #666666; /* Slightly lighter on hover */
+    transform: scale(1.05); /* Slight scale-up effect on hover */
+    color: #ffffff;
+}
+
+.Button button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Subtle focus shadow */
+}
+
+/* Responsive Button Styling */
+@media (max-width: 768px) {
+    .Button button {
+        padding: 8px 16px; /* Slightly smaller padding for smaller screens */
+        font-size: 14px; /* Smaller text size */
+    }
+}
+
+
+.sectionright article {
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -15px;  
+    margin-bottom: -5px;  
+    margin-left: -0px;
+}
+
+.sectionleft article {
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -15px;
+    margin-bottom: -5px; 
+}
+
+.knowtheteam {
+    font-size: 30px;
+    padding-left: 50px;
+    padding-top: 20px;
+    font-family: sans-serif;
+    font: bold;
+}
+
+.teamthingtext {
+    font-size: 18px;
+    padding-left: 55px;
+    padding-top: 7px;
+    font-family: sans-serif;
+}
+
+/* Description Styling */
+.description {
+    margin-top: 30px; /* Space below the name */
+    margin-bottom: 10px; /* Space above the article/section */
+    font-size: 18px; /* Smaller font size for the description */
+    color: #d9d9d9; /* Dark color for readability */
+    font-weight: normal; /* Regular weight to distinguish from the name */
+    text-align: left; /* Center the text */
+}
+
+.h1 {
+    font-size: 7rem;
+    color: #222;
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-style: italic;
+}
