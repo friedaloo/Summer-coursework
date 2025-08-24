@@ -111,7 +111,7 @@
     }
 
     /* Primary button styling */
-    .btn {
+    .link-btn {
       padding: 10px 20px;
       background-color: #6366f1; /* indigo-500 */
       color: white;
@@ -123,8 +123,10 @@
       align-self: flex-start;
     }
 
-    .btn:hover {
+    .link-btn:hover {
       background-color: #4f46e5; /* indigo-700 */
+      color: white;
+      text-decoration: none;
     }
 
     /* Navigation dots - vertical right alignment */
@@ -166,7 +168,7 @@
       <i class="fa-solid fa-magnifying-glass"></i> <!-- Search icon -->
       <input type="text" placeholder="Search...">
     </div>
-        <button class="login-btn"><a href="login.html">Login</a></button>
+        <button class="login-btn"><a href="/Html/login.html">Login</a></button>
 
     <i class="fa-solid fa-user"></i> <!-- User profile icon -->
   </div>
@@ -178,30 +180,30 @@
       <div class="logo"></div>
     </div>
     <div class="side-items">
-      <a href="#">
-        <i class="fa-solid fa-house"></i>
-        <span>Home</span>
-      </a>
-      <a href="#">
-        <i class="fa-solid fa-user-group"></i>
-        <span>About us</span>
-      </a>
-      <a href="#">
-        <i class="fa-solid fa-images"></i>
-        <span>Gallery</span>
-      </a>
-      <a href="#">
-        <i class="fa-solid fa-star"></i>
-        <span>Favorites</span>
-      </a>
-      <a href="#">
-        <i class="fa-solid fa-newspaper"></i>
-        <span>Blog</span>
-      </a>
-      <a href="#">
-        <i class="fa-solid fa-comments"></i>
-        <span>Contact</span>
-      </a>
+      <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+            <a href="./Html/about_us.html">
+                <i class="fa-solid fa-user-group"></i>
+                <span>About us</span>
+            </a>
+            <a href="./Html/gallery.html">
+                <i class="fa-solid fa-images"></i>
+                <span>Gallery</span>
+            </a>
+            <a href="./Html/favorites.html">
+                <i class="fa-solid fa-star"></i>
+                <span>Favorites</span>
+            </a>
+            <a href="./Html/Blog.html">
+                <i class="fa-solid fa-newspaper"></i>
+                <span>Blog</span>
+            </a>
+            <a href="./Html/feedback.html">
+                <i class="fa-solid fa-comments"></i>
+                <span>Feedback</span>
+            </a>
     </div>
   </div>
 
@@ -248,9 +250,9 @@
           <h1>About Us</h1>
           <h2>We're Your Creative Companions</h2>
           <p>Founded in 2020, Artivo empowers creators with tools to turn ideas into reality. Our team of designers, writers, and strategists believe in the power of collaboration.</p>
-          <a href="about_us.html" class="btn">Join our community</a>
+          <a href="./Html/about_us.html" class="link-btn">Join our community</a>
         </div>
-        <div class="image bg-yellow-500">About Us</div> <!-- Temporary placeholder -->
+        <div class="image bg-yellow-500" style="background-image: url('../Assets/aboutusimage.jpg'); background-position: center;"></div> <!-- Temporary placeholder -->
       </div>
     </section>
 
@@ -261,9 +263,9 @@
           <h1>Gallery</h1>
           <h2>Browse Thousands of Ideas</h2>
           <p>Explore our curated collection of creative projects and inspirations across various categories.</p>
-          <a href="gallery.html" class="btn">View All</a>
+          <a href="./Html/gallery.html" class="link-btn">View All</a>
         </div>
-        <div class="image bg-purple-500">Gallery</div>
+        <div class="image bg-yellow-500" style="background-image: url('../Assets/galleryimage.jpg'); background-position: center; background-size: cover;"></div>
       </div>
     </section>
 
@@ -274,9 +276,9 @@
           <h1>Artworks</h1>
           <h2>Featured Artworks</h2>
           <p>See how we've helped clients transform their spaces and bring their visions to life.</p>
-          <a href="Artwork.html" class="btn">Explore Artworks</a>
+          <a href="./Html/Artwork.html" class="link-btn">Explore Artworks</a>
         </div>
-        <div class="image bg-pink-500">Artworks</div>
+        <div class="image bg-pink-500" style="background-image: url('Assets/collectionimage.jpg'); background-position: center; background-size: cover;"></div>
       </div>
     </section>
 
@@ -287,9 +289,9 @@
           <h1>Blog</h1>
           <h2>Ideas Worth Sharing</h2>
           <p>Read our latest articles on design trends, creative tips, and project insights.</p>
-          <a href="Blog.html" class="btn">See All Blogs</a>
+          <a href="./Html/Blog.html" class="link-btn">See All Blogs</a>
         </div>
-        <div class="image bg-green-500">Blog</div>
+        <div class="image bg-green-500" style="background-image: url('../Assets/blogimage.jpg'); background-position: center; background-size: cover;" ></div>
       </div>
     </section>
 
@@ -300,9 +302,9 @@
           <h1>Feedback</h1>
           <h2>Any Questions? Feel free to ask</h2>
           <p>Have questions or want to collaborate? Reach out to us today.</p>
-          <a href="feedback.html" class="btn">Send Message</a>
+          <a href="./Html/feedback.html" class="link-btn">Send Feedback</a>
         </div>
-        <div class="image bg-orange-500">Feedback</div>
+        <div class="image bg-orange-500" style="background-image: url('../Assets/feedbackimage.jpg'); background-position: center; background-size: cover;"></div>
       </div>
     </section>
   </main>
