@@ -78,7 +78,7 @@ Summer-coursework/
 
 ## 📄 Pages Requirements
 
-- [ ] Home page (Landing with introduction)
+- [ ] Home page 
 - [ ] About page (Team information and individual bios)
 - [ ] Portfolio page (Showcase of projects)
 - [ ] Services page (Details of services offered)
